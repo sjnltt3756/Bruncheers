@@ -1,0 +1,276 @@
+/* 폰트 */
+@font-face {
+  font-family: "GmarketSansTTFMedium";
+  font-weight: normal;
+  src: url("../fonts/GmarketSansTTFMedium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GmarketSansTTFLight";
+  font-weight: normal;
+  src: url("../fonts/GmarketSansTTFLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "GmarketSansTTFBold";
+  font-weight: normal;
+  src: url("../fonts/GmarketSansTTFBold.woff2") format("woff2");
+}
+
+html body {
+  font-family: "GmarketSansTTFMedium";
+}
+
+
+
+/* Main start */
+.image-container image {
+  transition: transform 0.3s ease-in-out; /* 변환 효과를 0.3초 동안 부드럽게 적용 */
+}
+
+.image-container:hover image {
+  transform: scale(1.03); /* 호버 시 이미지를 1.1배로 확대 */
+  filter: opacity(0.9); 
+  cursor: pointer; /* 호버 시 마우스 커서를 클릭 아이콘으로 변경 */
+}
+
+.center-text {
+  opacity: 0; /* 초기에는 텍스트를 숨김 */
+  transition: opacity 0.3s ease-in-out; /* 텍스트가 나타나거나 사라지는 효과를 추가 */
+}
+
+/* 호버 시 텍스트가 나타나도록 스타일 변경 */
+.bd-placeholder-img:hover .center-text {
+  opacity: 1;
+}
+.bd-placeholder-img:hover {
+  filter: brightness(0.8);
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.bd-placeholder-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.headerNavigation {
+	background: #ffffff;
+	margin-top: 10px;
+	margin-bottom: 50px;
+	text-align: center
+}
+
+.headerNavigation ul {
+	margin: 15px 10px 8px 0px;
+	padding: 0;
+	list-style-type: none;
+	text-align: right;
+}
+
+.headerNavigation li {
+	margin-bottom: 5px;
+	display: inline-block;
+	margin: 0 10px;
+	list-style: none;
+	padding: 0;
+	text-align: right;
+	position: relative;
+}
+
+.headerNavigation a {
+	font-size: 12px;
+	color: #272727;
+}
+
+.shop-top-navigation {
+	background: #ffffff;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.shop-top-navigation ul {
+	margin: 15px 10px;
+	padding: 0;
+	list-style-type: none;
+	line-height: 50px;
+}
+
+.shop-top-navigation li {
+	margin-bottom: 5px;
+	display: inline-block;
+	margin: 0 10px;
+	list-style: none;
+	padding: 0;
+}
+
+.shop-top-navigation a {
+	color: #272727;
+	font-size: 15px;
+}
+
+
+/*
+div#extra{background:#CCC8B3;}
+*/
+div#footer {
+	display: flex;
+  	justify-content: center;
+	clear: left;
+	width: 100%;
+	margin: 0 auto; /* 수평 중앙 정렬 */
+	background-color: #fffefe;
+	padding: 100px 0 0 0;
+	border: 1px solid rgb(255, 255, 255);
+	white-space: nowrap; /* 텍스트가 줄 바꿈되지 않도록 설정 */
+}
+
+div#infoBoxLinkInfo {
+	display: inline-block;
+	vertical-align: top; /* 내부 정렬을 위한 속성 */
+	background-color: #ffffff;
+	box-sizing: border-box; /* 패딩과 보더를 포함한 요소의 크기 계산 */
+	margin: 0 5px; /* 좌우 여백 조절 */
+	padding: 20px; /* 내부 여백 */
+	text-align: left;
+}
+
+div#infoBoxCsInfo {
+	display: inline-block;
+	vertical-align: top;
+	background-color: #ffffff;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	box-sizing: border-box; 
+	margin: 0 5px; 
+	padding: 20px;
+	text-align: left;
+}
+
+div#infoBoxOfficeInfo {
+	display: inline-block;
+	vertical-align: top; 
+	background-color: #ffffff;
+	box-sizing: border-box;
+	margin: 0 5px; 
+	padding: 20px; 
+	text-align: left;
+}
+
+div#footer p {
+	margin: 0;
+	padding: 5px 10px
+}
+
+
+/*
+div#navigation{float:left;width:150px;height:350px;margin-left:-700px}
+*/
+
+/*
+div#wrapper{float:left;width:100%}
+*/
+
+
+div#content {
+	margin: 0
+}
+
+.speech-bubble {
+	background: #86c980;
+	border-radius: .4em;
+	width: 80px;
+	height: 20px;
+	font-size: 7px;
+	color: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation-duration: 0.7s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+	position: absolute;
+	top: 160%; /* 링크 바로 아래에 위치 */
+  left: 50%; /* li의 중앙에 위치 */
+  transform: translateX(-50%); 
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-55%); /* 시작 위치 */
+    }
+
+    to {
+        transform: translateX(-45%); /* 끝 위치 */
+    }
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-bottom-color: #86c980;
+	border-top: 0;
+	margin-left: -3px;
+	margin-top: -6px;
+}
+
+
+
+A:link {
+	text-decoration: none;
+}
+
+/* A:visited {
+	color: #333333;
+	font-size: 12px;
+	text-decoration: none;
+} */
+
+A:active {
+	color: #333333;
+	font-size: 12px;
+	text-decoration: none;
+}
+A:hover {
+	color: #BEA12C;
+}
+
+.headerH2{
+	font-size: 10px;
+}
+
+
+.custom-link{
+	color: #555
+}
+.main-button {
+	width: 150px;
+	height: 35px;
+	border-radius: 10px;
+	text-align: center;
+	background-color: #fcfcaf; /* 원하는 색상으로 변경 */
+	border: solid 1px #abaa73;
+	color: rgb(20, 20, 20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .main-button:hover {
+	background-color: #d5e7a2;; /* 호버 시 색상 변경 */
+  }
+
+  .opacity-image {
+	opacity: 0.7;
+  }
+
+  .carousel-caption {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+  }

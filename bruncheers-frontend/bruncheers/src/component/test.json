@@ -1,0 +1,83 @@
+{
+    "status": 1,
+    "message": "성공",
+    "data": [
+        {
+            "userNo": 2,
+            "paNo": 2,
+            "orderItemDtoList": [
+                {
+                    "oiNo": 4,
+                    "oiQty": 1,
+                    "reviewNo": 0,
+                    "productOption": {
+                        "poNo": 1,
+                        "poPrice": 0,
+                        "poName": "1주",
+                        "product": {
+                            "catNo": 1,
+                            "pno": 1,
+                            "preg": "2024-05-29T10:08:40.000+00:00",
+                            "pimage": "lunchBox.jpg",
+                            "pdeimg": null,
+                            "pname": "1일1식 든든 도시락",
+                            "pprice": 53800,
+                            "pdetail": "브런치얼스만의 특별레시피로 제조한 든든하면서 가벼운 프리미엄 도시락"
+                        }
+                    },
+                    "ono": 2
+                },
+                {
+                    "oiNo": 5,
+                    "oiQty": 1,
+                    "reviewNo": 0,
+                    "productOption": {
+                        "poNo": 18,
+                        "poPrice": 107100,
+                        "poName": "2주",
+                        "product": {
+                            "catNo": 2,
+                            "pno": 5,
+                            "preg": "2024-05-29T10:08:40.000+00:00",
+                            "pimage": "sal.jpg",
+                            "pdeimg": null,
+                            "pname": "1일2식 신선 샐러드",
+                            "pprice": 107800,
+                            "pdetail": "브런치얼스의 농장에서 키운 채소들로 만든 건강하고 즐거움 가득 신선 샐러드"
+                        }
+                    },
+                    "ono": 2
+                },
+                {
+                    "oiNo": 6,
+                    "oiQty": 1,
+                    "reviewNo": 5,
+                    "productOption": {
+                        "poNo": 30,
+                        "poPrice": 132800,
+                        "poName": "2주",
+                        "product": {
+                            "catNo": 3,
+                            "pno": 8,
+                            "preg": "2024-05-29T10:08:40.000+00:00",
+                            "pimage": "sal.jpg",
+                            "pdeimg": null,
+                            "pname": "1일3식 신선 샐러드",
+                            "pprice": 143800,
+                            "pdetail": "브런치얼스의 농장에서 키운 채소들로 만든 건강하고 즐거움 가득 신선 샐러드"
+                        }
+                    },
+                    "ono": 2
+                }
+            ],
+            "ono": 2,
+            "ophone": "010-2345-6789",
+            "oreq": "저는 싱겁게 먹는데 간 조절이 되나요..? 된다구 해주세요",
+            "oname": "이가을",
+            "oaddr": "서울시 중랑구 면목동 999번지",
+            "ozip": 23453,
+            "oprice": 150000,
+            "odate": "2024-05-29T10:08:41.000+00:00"
+        }
+    ]
+}

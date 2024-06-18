@@ -1,0 +1,236 @@
+@charset "UTF-8";
+
+
+/*
+product css
+*/
+
+
+.p-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.horizontal-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개의 열 */
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* 그리드가 부모 컨테이너를 채우도록 설정 */
+}
+
+
+.product-list {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.horizontal-list::after {
+  display: block;
+}
+
+.product-list img {
+  width: 80%;
+  height: auto;
+}
+
+.p-content,
+.p-ori-price {
+  color: #6d6c6cb7;
+}
+
+.p-content {
+  text-align: center;
+}
+
+
+.p-price {
+  font-weight: bold;
+}
+
+.p-content-divider {
+  width: 100%;
+  border-bottom: 1px solid #ccc; 
+  margin: 10px 0px; 
+}
+
+
+
+/*
+product_detail css
+*/
+
+.pdetail {
+  background: rgb(212, 212, 212);
+  height: 1px;
+  border: 0;
+}
+
+.pname {
+  font-size: 23px;
+  color: rgb(75, 75, 75);
+  padding: 15px 0 15px 0;
+}
+
+.pcontent {
+  color: rgb(75, 75, 75);
+  padding: 0 0 15px 0;
+}
+
+.pd-list {
+  display: flex;
+  gap: 20px;
+  margin: 0;
+}
+
+.pd-list1 {
+  flex-basis: 15%;
+}
+
+.pd-list2 {
+  flex-grow: 1;
+  max-width: 450px;
+  padding: 0px 20px;
+}
+
+.pd-list td {
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 15px;
+}
+
+.pd-list2 tr {
+  text-align: left;
+}
+
+.price-label, .option-label{
+padding-right:30px;
+}
+
+.price-label{
+  margin-right: 15px;
+}
+
+.option {
+  outline: 0;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.pd-cat {
+  background: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.pd-cat ul {
+  margin: 15px 10px;
+  padding: 0;
+  list-style-type: none;
+  line-height: 50px;
+}
+
+.pd-cat li {
+  margin-bottom: 5px;
+  display: inline-block;
+  margin: 0 40px;
+  list-style: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.pd-cat a {
+  font-size: 13px;
+  color: #272727;
+}
+
+
+.option-detail {
+display: flex;
+justify-content: space-between;
+}
+
+/*
+order, cart button css
+*/
+.custom-btnn {
+  width: 150px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 0px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-3 {
+  line-height: 39px;
+  padding: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.btn-3:hover {
+  background: transparent;
+  color: #000000;
+}
+.btn-3 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.btn-3:before,
+.btn-3:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #797979;
+  transition: all 0.3s ease;
+}
+.btn-3:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-3:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3:hover:before {
+  height: 100%;
+}
+.btn-3:hover:after {
+  width: 100%;
+}
+.btn-3 span:before,
+.btn-3 span:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #797979;
+  transition: all 0.3s ease;
+}
+.btn-3 span:before {
+  width: 2px;
+  height: 0%;
+}
+.btn-3 span:after {
+  width: 0%;
+  height: 2px;
+}
+.btn-3 span:hover:before {
+  height: 100%;
+}
+.btn-3 span:hover:after {
+  width: 100%;
+}

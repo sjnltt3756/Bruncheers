@@ -1,0 +1,7 @@
+.star-container {
+  width: 100px; /* 원하는 너비로 조절 */
+  height: 40px; /* 원하는 높이로 조절 */
+  display: flex;
+  justify-content: center; /* 수평 가운데 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+}

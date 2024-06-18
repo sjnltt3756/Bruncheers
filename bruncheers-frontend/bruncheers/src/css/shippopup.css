@@ -1,0 +1,256 @@
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+form,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+input,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: top;
+}
+
+.popup-address-list {
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px 20px 30px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.ship-popup-wrap .popup-tit {
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 14px;
+}
+
+.popup-address-list .ship-link {
+  position: absolute;
+  top: 28px;
+  right: 20px;
+}
+
+.popup-address-list .ship-link:hover {
+  cursor: pointer;
+  color: #c0c0c0;
+}
+
+.popup-address-list .ship-link span {
+  display: inline-block;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.ship-link {
+  display: inline-block;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #497539;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+.ship-addr-info .addr-name {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.ship-addr-info .ship-label.delv.reserv {
+  color: #497539;
+  border: 1px solid #497539;
+}
+
+.ship-addr-info .ship-label.delv {
+  display: inline-block;
+  padding: 0 7px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.ship-addr-info .ship-label {
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.ship-addr-info .phone-no:first-of-type {
+  padding-left: 0;
+}
+
+.ship-addr-info .phone-no {
+  position: relative;
+  display: inline-block;
+  padding-left: 23px;
+  color: #777;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.ship-addr-info .txt-addr {
+  clear: both;
+  margin-top: 5px;
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ship-addr-info .ship-btn-group .btn-left,
+.ship-addr-info .ship-btn-group .btn-right {
+  top: 14px;
+}
+
+.ship-btn-group .btn-left,
+.ship-btn-group .btn-right {
+  float: none;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+}
+.ship-btn-group .btn-right {
+  right: 0;
+}
+
+.ship-addr-info .btn-left .ship-btn {
+  min-width: 50px;
+  margin-right: 6px;
+}
+
+.ship-btn-group {
+  min-height: 32px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 15px;
+  clear: both;
+  position: relative;
+}
+
+.ship-addr-info {
+  clear: both;
+  padding-bottom: 5px;
+  word-break: break-all;
+}
+.list-dlv-addr {
+  position: relative;
+  padding: 15px 15px 20px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.ship-btn.btn-accent {
+  background-color: #d4d4d4;
+}
+.ship-btn.btn-accent:hover {
+  background-color: #5f8d4e;
+}
+.btn-sm.btn-default:hover {
+  border: 1px solid #020202;
+}
+
+.ship-btn-group a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ship-btn {
+  display: inline-block;
+  min-width: 100px;
+  height: 40px;
+  line-height: 36px;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 2px 8px 0 8px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  -webkit-transition: border 0.2s, background 0.2s ease-in-out;
+  -moz-transition: border 0.2s, background 0.2s ease-in-out;
+  -o-transition: border 0.2s, background 0.2s ease-in-out;
+  transition: border 0.2s, background 0.2s ease-in-out;
+}
+
+.ship-paging {
+  text-align: center;
+  padding-top: 20px;
+  clear: both;
+}
+
+.ship-paging .page.is-active {
+  font-weight: bold;
+  color: #000000;
+}
+
+.ship-paging .page {
+  display: inline-block;
+  width: 28px;
+  line-height: 22px;
+  font-size: 16px;
+  color: #dadada;
+  vertical-align: top;
+  margin: 5px 0;
+  border: 0;
+  padding: 0;
+  background: none;
+}
+
+
+

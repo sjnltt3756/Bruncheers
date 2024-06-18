@@ -1,0 +1,116 @@
+.coupContent {
+  max-height: none;
+  margin-top: 0;
+  padding: 0 20px 30px 20px;
+}
+.coupContent > p {
+  padding-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.discount_price{
+    color: #5f8d4e;
+}
+
+.coup_span{
+    padding-left: 20px;
+}
+
+.coupTitle {
+  font-size: 24px;
+  padding: 20px 60px 0 20px;
+}
+.coup-table {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 14px;
+  border-top: 1px solid #000000;
+  text-align: center;
+  height: auto;
+  border-bottom: none;
+}
+
+.coup-table th {
+  height: 52px;
+  border-bottom: 1px solid #000000;
+  font-size: 16px;
+  vertical-align: middle;
+  font-weight: normal;
+}
+
+.left {
+  text-align: left;
+}
+
+.coup-table td{
+        padding: 10px;
+        box-sizing: border-box;
+        vertical-align: middle;
+}
+
+.coup-table button {
+    appearance: none;
+    font-size: inherit;
+    border: 0;
+    cursor: pointer;
+    background: none;
+  }
+
+.coup-table-btn {
+    display: inline-block;
+    min-width: 100px;
+    height: 40px;
+    line-height: 36px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 2px 8px 0px 8px;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 0;
+    margin-right: 10px;
+    -webkit-transition: border 0.2s, background 0.2s ease-in-out;
+    -moz-transition: border 0.2s, background 0.2s ease-in-out;
+    -o-transition: border 0.2s, background 0.2s ease-in-out;
+    transition: border 0.2s, background 0.2s ease-in-out;
+  }
+
+  .btn-choose {
+    border: 1px solid #888888;
+    background-color: #f1f1f1;
+    color: #000000;
+  }
+  .btn-choose:hover {
+    border: 1px solid #888888;
+    background-color: #d4d4d4;
+    color: #000000;
+  }
+
+  .btn-delete {
+    border: 1px solid #888888;
+    background-color: #f1f1f1;
+    color: #000000;
+}
+  .btn-delete:hover {
+    border: 1px solid #888888;
+    background-color: #d4d4d4;
+    color: #000000;
+}
+  
+  .btn-group a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .btn-group {
+    display: block;
+    min-height: 32px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    clear: both;
+    position: relative;
+  }

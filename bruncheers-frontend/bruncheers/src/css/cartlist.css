@@ -1,0 +1,182 @@
+.productBox h2 {
+    width:100%;
+}
+
+
+.productBox{
+    width: 80%;
+    /* border: 1px solid rgb(220, 219, 220); */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 40px;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.table1 {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tbody1 {
+    font-size: 16px;
+   
+}
+
+.qbtn-div {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* 수평 가운데 정렬도 추가합니다 */
+}
+
+.qbtn-div > .qbtn {
+    border: 1px solid rgb(222, 221, 221);
+    border-radius: 10px;
+    font-size: 16px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: rgb(255, 249, 243);
+    transition: all 0.3s;
+    margin: 3px;
+    display: flex; /* 텍스트를 수직으로 정렬하기 위해 추가합니다 */
+    align-items: center; /* 텍스트를 수직으로 정렬하기 위해 추가합니다 */
+    justify-content: center; /* 텍스트를 수평으로 정렬하기 위해 추가합니다 */
+}
+
+.tbody1 button {
+    display: inline-block; 
+    border: 1px solid rgb(222, 221, 221);
+    border-radius: 20px;
+    font-size: 13px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(255, 249, 243);
+    transition: all 0.3s;
+    line-height: 0;
+    text-align: center;
+    margin: 3px;
+} 
+ .bottomBtn {
+    display: inline-block; 
+    border: 1px solid rgb(222, 221, 221);
+    border-radius: 10px;
+    font-size: 14px;
+    width: 160px;
+    height: 45px;
+    cursor: pointer;
+    background-color: #def1b8;
+    transition: all 0.3s;
+    text-align: center;
+} 
+
+
+.bottomBtn:hover {
+   opacity: 0.8;
+} 
+
+.bottomButtonsContainer{
+    padding-top: 40px;
+}
+
+.tbody1 button:hover {
+    background-color: rgb(255, 246, 211);
+    font-weight: bold;
+} 
+
+
+.tbody1 > tr > td {
+    width: 10vw;
+    vertical-align: middle;
+}
+
+
+.tbody1 > tr > td > img {
+    width: 8vw;
+    height: auto;
+}
+
+
+.tbody1 > tr > td:first-child {
+    width: 2vw;
+    height:8vw; 
+  }
+
+.CustomCheckbox{
+    text-align: center;
+}
+
+
+.product-tr{
+    border-top: 1px solid rgb(195, 194, 194);
+}
+
+.productBox td{
+    padding: 15px 5px;
+}
+.productBox th{
+    padding-bottom: 10px;
+}
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:270px) and (max-width:800px) {
+   
+    .productBox h2 {
+        font-size: 9px;
+        width: 80%;
+    }
+    .productBox{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        line-height: 26px;
+        align-items: center;
+    }
+
+    .table1 {
+        width: 80%;
+    }
+
+    .tbody1 > tr > td:nth-child(2) {
+        width: 30vw;
+        text-align: center;
+    }
+
+    .tbody1 {
+        font-size: 9px;
+    }
+    .productBox th  {
+        font-size: 9px;
+    }
+
+    .tbody1 button.qbtn  {
+        width: 20px;
+        height: 10px;
+        border-radius: 7px;
+        font-size: 9px;
+    } 
+  
+    .tbody1 button  {
+        width: 36px;
+        height: 20px;
+        border-radius: 7px;
+        font-size: 6px;
+    } 
+
+    .productBox .bottomBtn {
+        width: 100px;
+        height: 30px;
+        border-radius: 7px;
+        font-size: 9px;
+    }
+
+    
+} 
+
+
+  

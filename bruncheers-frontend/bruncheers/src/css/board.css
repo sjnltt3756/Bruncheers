@@ -1,0 +1,325 @@
+.no-border-collapse {
+  border-collapse: separate !important;
+}
+
+.b-container {
+  position: relative;
+}
+
+.b-container {
+  position: absolute;
+  right: 0;
+  bottom: -50px; /* 버튼의 위치를 테이블 아래에 두기 위해 필요한 값 */
+}
+
+.b-table {
+  border-collapse: collapse;
+  width: 1000px;
+  margin: 1rem auto;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.b-thead {
+  box-shadow: 4px 4px 10px rgba(75, 179, 106, 0.1);
+}
+
+.b-tbody {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.b-th {
+  padding: 8px;
+  font-size: 12px;
+  text-align: left;
+  text-align: center;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  border-left: none;
+  border-right: none;
+  color: #000;
+}
+
+
+
+.b-table td,.b-table th{
+  padding: 0.4em;
+}
+.b-table{
+  font-size: 12px;
+	color: #333333;
+	line-height: 18px;
+}
+
+/* 테이블 올렸을 때 */
+.b-tbody tr:hover {
+  background-color: #d3d3d3;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+/* 테이블 비율 */
+.b-th:nth-child(1),
+.b-td:nth-child(1) {
+  width: 13%;
+}
+
+.b-th:nth-child(2),
+.b-td:nth-child(2) {
+  width: 50%;
+}
+
+.b-th:nth-child(3),
+.b-td:nth-child(3) {
+  width: 15%;
+}
+
+.b-th:nth-child(4),
+.b-td:nth-child(4) {
+  width: 15%;
+}
+
+.b-th:nth-child(5),
+.b-td:nth-child(5) {
+  width: 7%;
+}
+
+/*
+board btn css
+*/
+
+
+
+.custom-btn {
+  width: 70px;
+  height: 30px;
+  padding: 0px;
+  border: 2px solid #b4b4b4;
+  font-size: 12px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.btn-11 {
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.btn-11:hover {
+  background: #313131;
+  color: #fff;
+}
+.btn-11:before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  top: -180px;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: #fff;
+  animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:active {
+  box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, 0.3),
+    -4px -4px 6px 0 rgba(116, 125, 136, 0.2),
+    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+@keyframes shiny-btn1 {
+  0% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0;
+  }
+  80% {
+    -webkit-transform: scale(0) rotate(45deg);
+    opacity: 0.5;
+  }
+  81% {
+    -webkit-transform: scale(4) rotate(45deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(50) rotate(45deg);
+    opacity: 0;
+  }
+}
+
+/*
+board write form css
+*/
+.bb-table {
+  table-layout: fixed;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bb-table td {
+  padding:0.4em;
+}
+
+.b-name-s {
+  display: flex;
+  padding:0.5em 0em;
+  width: 100%;
+}
+
+
+.b-title {
+  border: 1.5px rgb(128, 128, 128) solid;
+  font-size: 14px;
+  width: 550px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: white;
+  color: black;
+}
+
+
+.b-title-s {
+  border: 1.5px rgb(128, 128, 128) solid;
+  width: 140px;
+  height: 30px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+.b-title-re-t {
+  border: 1.5px rgb(128, 128, 128) solid;
+  font-size: 14px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 30px;
+  background-color: white;
+  color: black;
+}
+
+.b-title-re-con {
+  border: 1.5px rgb(128, 128, 128) solid;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: left;
+  resize: none;
+}
+
+.b-title-cat {
+  border: 1.5px rgb(128, 128, 128) solid;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+.b-title-cat-r{
+  border: 1.5px rgb(128, 128, 128) solid;
+  height: 30px;
+  font-size: 13px;
+  border-radius: 10px;
+}
+
+.b-content {
+  border: 1.5px rgb(128, 128, 128) solid;
+  height: 400px;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  resize: none;
+}
+
+.bb-table textarea {
+  border: 1.5px rgb(128, 128, 128) solid;
+  width: 100%;
+  height: 400px;
+  border-radius: 10px;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 14px;
+  text-align: left;
+  resize: none;
+  background-color: white;
+  color: black;
+
+}
+
+.non {
+text-align: center;  
+}
+
+.header {
+  height: 35px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.header-w {
+  height: 30px;
+  padding-left: 230px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.header-s {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+.header-l {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/*
+radio btn css
+*/
+
+.select input[type="radio"] {
+  display: none;
+}
+.select input[type="radio"] + label {
+  display: inline-block;
+  cursor: pointer;
+  width: 65px;
+  border: 1px solid #525252;
+  line-height: 28px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+}
+.select input[type="radio"] + label {
+  background-color: #fff;
+  color: #525252;
+}
+.select input[type="radio"]:checked + label {
+  background-color: #525252;
+  color: #fff;
+}
+
+.pagination-link {
+  color: black; /* 기본 색상은 검은색 */
+}
+
+.pagination-link.active {
+  color: red; /* 현재 페이지 링크는 빨간색 */
+}

@@ -1,0 +1,50 @@
+.order-index {
+    width: 100%;
+}
+.order-index-box {
+    display: inline;
+    margin-right: 3%;
+}
+.order-index span {
+    margin-right: 0.5%;
+    display: inline;
+}
+
+.orderTable{
+    border-top: 1px solid rgb(195, 194, 194);
+    line-height: 3;
+}
+
+.shipTitle, .payTitle{
+    width: 100%;
+    margin-top: 40px;
+    
+}
+
+.ship-table, .pay-table{
+        width: 100%;
+        line-height: 3;
+        font-size: 14px;
+        border-top: 1px solid rgb(195, 194, 194);
+}
+
+.pay-table th, .ship-table th{
+    width:18%;
+}
+
+
+@media all and (min-width:270px) and (max-width:800px) {
+   .shipTitle, .payTitle  {
+        font-size: 9px;
+        width: 80%;
+    }
+    .order-index {
+        font-size: 9px;
+        width: 80%;
+    }
+
+    .ship-table , .pay-table {
+        width: 80%;
+    }
+
+}
