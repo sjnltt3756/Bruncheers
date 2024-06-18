@@ -29,7 +29,7 @@
 
 |김미진|김진효|원주하|지민수|정수빈|이승빈|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|UI, SHIP|UI, COUPON, CART|BOARD, REVIEW|USER, SEQURITY|ORDER, PRODUCT|PPT|
+|UI, SHIP|UI, COUPON, CART|BOARD, REVIEW|USER, SEQURITY,JWT|ORDER, PRODUCT|PPT|
 
 
 </br></br>
