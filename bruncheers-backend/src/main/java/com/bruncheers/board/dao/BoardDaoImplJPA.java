@@ -96,15 +96,16 @@ public class BoardDaoImplJPA implements BoardDao {
 	// 8.답글 존재여부 확인
 	@Override
 	public boolean countReplay(Board board) throws SQLException {
-		int rowCount = boardRepository.countReply(board);
+		// Board 객체에서 필요한 필드 값을 추출
+		Integer bGroupno = board.getBGroupno();
+		int bDepth = board.getBDepth();
+		int bStep = board.getBStep();
 
-		Boolean isExist = false;
-		if (rowCount > 1) {
-			isExist = true;
+		// 추출한 필드 값을 사용하여 countReply 메서드를 호출
+		int rowCount = boardRepository.countReply(bGroupno, bDepth, bStep);
 
-		}
-
-		return isExist;
+		// rowCount가 1보다 큰지 확인하여 결과 반환
+		return rowCount > 1;
 	}
 
 	@Override

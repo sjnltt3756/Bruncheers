@@ -25,7 +25,7 @@ import com.bruncheers.user.entity.User;
 import com.bruncheers.user.enums.Role;
 import com.bruncheers.user.repository.UserRepository;
 
-import net.bytebuddy.implementation.bind.annotation.IgnoreForBinding;
+//import net.bytebuddy.implementation.bind.annotation.IgnoreForBinding;
 
 @Service("boardServiceImpl")
 public class BoardServiceImpl implements BoardService {
