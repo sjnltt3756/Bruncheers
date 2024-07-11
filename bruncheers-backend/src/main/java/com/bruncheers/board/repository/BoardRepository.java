@@ -22,7 +22,7 @@ public interface BoardRepository extends JpaRepository<Board, Integer> {
 	void increaseRecountById(@Param("bNo") Integer bNo);
 
 	@Query("SELECT COUNT(b) FROM Board b WHERE b.bGroupno = :bGroupno AND b.bDepth >= :bDepth AND b.bStep >= :bStep")
-	int countReply(Board board);
+	int countReply(@Param("bGroupno") Integer bGroupno, @Param("bDepth") int bDepth, @Param("bStep") int bStep);
 	
 	@Query("SELECT COUNT(b) FROM Board b")
     int getBoardCount();
