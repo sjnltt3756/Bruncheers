@@ -85,16 +85,15 @@ public class SecurityConfiguration {
 		// JWT Token 필터를 id/password 인증 필터 이전에 추가
 		httpSecurity.addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider),
 				UsernamePasswordAuthenticationFilter.class);
-		httpSecurity.exceptionHandling()
-        .accessDeniedHandler(accessDeniedHandler);
+		httpSecurity.exceptionHandling((exceptionHandling) ->
+				exceptionHandling
+						.accessDeniedPage("/http://localhost:3000/error"));
 
 		return httpSecurity.build();
 	}
 
 	/**
 	 * Swagger 페이지 접근에 대한 예외 처리
-	 *
-	 * @param webSecurity
 	 */
 	@Bean
 	public WebSecurityCustomizer webSecurityCustomizer() {
